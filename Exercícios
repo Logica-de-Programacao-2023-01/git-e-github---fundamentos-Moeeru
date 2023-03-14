@@ -1,6 +1,9 @@
                 #Exercicio 4
 leia x
-
+var resultado = 1
+para cada numero entre 1 e x, faça:
+  resultado = resultado * numero_atual
+Escreva resultado
 #Execicio 5
 leia x
 leia lista
