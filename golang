@@ -1,0 +1,104 @@
+                #Exercicio 1
+package main
+
+import "fmt"
+
+func main() {
+	var nome string
+	fmt.Println("Qual o seu nome? ")
+	fmt.Scan(&nome)
+	var idade int
+	fmt.Println("Quantos anos vc tem? ")
+	fmt.Scan(&idade)
+	var peso float64
+	fmt.Println("Quanto vc pesa? ")
+	fmt.Scan(&peso)
+	fmt.Println("Seu nome é ", nome, ", sua idade é ", idade, " e seu peso é ", peso, "Kg")
+}
+
+#Exercicio 2
+package main
+
+import "fmt"
+
+func main() {
+	var base int
+	fmt.Println("digite ao valor da base: ")
+	fmt.Scan(&base)
+	var altura int
+	fmt.Println("Digite o valor da altura: ")
+	fmt.Scan(&altura)
+	area := base * altura
+	fmt.Println("A area do retangulo é ", area)
+
+}
+
+#Exercicio 3
+package main
+
+import "fmt"
+
+func main() {
+	var base int
+	var altura int
+	var prof int
+	fmt.Println("Digite o valor da base: ")
+	fmt.Scan(&base)
+	fmt.Println("Digite o valor da altura:")
+	fmt.Scan(&altura)
+	fmt.Println("Digite o valor da profundidade: ")
+	fmt.Scan(&prof)
+	volume := base * altura * prof
+	fmt.Println("O volume da caixa é ", volume)
+}
+
+#Exercicio 4
+package main
+
+import "fmt"
+
+func main() {
+	n1 := 0.0
+	n2 := 0.0
+	n3 := 0.0
+	n4 := 0.0
+	fmt.Println("Digite um numero: ")
+	fmt.Scan(&n1)
+	fmt.Println("Digite outro numero: ")
+	fmt.Scan(&n2)
+	fmt.Println("Digite outro numero: ")
+	fmt.Scan(&n3)
+	fmt.Println("Digite outro numero: ")
+	fmt.Scan(&n4)
+	media := (n1 + n2 + n3 + n4) / 4
+	fmt.Println("A média aritmética dos numeros dados é ", media)
+}
+
+#Exercicio 5
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	escolha := 0
+	fmt.Println("Qual a moeda de entrada" +
+		" [1] dolar" +
+		" [2] real")
+	fmt.Scan(&escolha)
+	if escolha == 1 {
+		dol := 0.0
+		fmt.Println("Digite um valor em dolares a ser convertido para reais: ")
+		fmt.Scan(&dol)
+		reais := dol * 5.24
+		fmt.Println("O valor $", dol, "em reais vale", reais)
+	}
+	if escolha == 2 {
+		reais2 := 0.0
+		fmt.Println("Digite um valor em dolares a ser convertido para dolares: ")
+		fmt.Scan(&reais2)
+		dol2 := reais2 / 5.24
+		fmt.Println("O valor ", reais2, "em reais vale", dol2)
+	}
+}
