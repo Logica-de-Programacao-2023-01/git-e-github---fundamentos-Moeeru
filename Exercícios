@@ -1,1 +1,48 @@
+                #Exercicio 4
+leia x
 
+#Execicio 5
+leia x
+leia lista
+para cada elemneto da lista, faça:
+   se elemento for igual a x,então:
+    escreva x
+    fim
+   escreva 'Não encontrei'
+                #Exercicio 6
+leia x 
+leia potencia
+var resultado = x
+para cada numero entre 1 e potencia, faça:
+  resultado = resultado * x
+escreva potencia
+                #Exercicio 7
+leia x
+para cada numero entre 2 e (x-1), faça:
+  se x divido por numero_atual tem resto 0:
+    escreva 'Não é primo'
+    fim
+escreva'ele é primo'
+                #Exercico 8
+leia base
+leia altura
+area = (base * altura)/2
+escreva area
+                #Exercicio 9
+leia capital_inicial
+leia taxa_juros
+leia tempo
+var resultado = capital_inicial
+para cada numero entre 1 e tempo, faça:
+  resultado = resultado + (resultado * taxa_juros) 
+resultado
+                #Exercicio 10
+leia lista_numeros
+leia lista_pesos
+var somatorio_numeros = 0
+var somatorio_pesos = 0
+para cada elemento da lista_numeros, faça:
+  somatorio_numeros = somatorio_numeros + (elemento_atual * peso_correspondente)
+para cada peso da lista_pesos,faça:
+  somatorio_peso= somatoria_peso + peso
+media = somatorio_numeros / somatorio pesos
