@@ -82,23 +82,29 @@ import (
 )
 
 func main() {
+	valdol := 0.0
+	fmt.Println("Digite o valor do dolar hj")
+	fmt.Scan(&valdol)
+	
 	escolha := 0
-	fmt.Println("Qual a moeda de entrada" +
+	fmt.Println("Qual a moeda de entrada a ser convertida " +
 		" [1] dolar" +
 		" [2] real")
 	fmt.Scan(&escolha)
+	
 	if escolha == 1 {
 		dol := 0.0
 		fmt.Println("Digite um valor em dolares a ser convertido para reais: ")
 		fmt.Scan(&dol)
-		reais := dol * 5.24
+		reais := dol * valdol
 		fmt.Println("O valor $", dol, "em reais vale", reais)
 	}
 	if escolha == 2 {
 		reais2 := 0.0
 		fmt.Println("Digite um valor em dolares a ser convertido para dolares: ")
 		fmt.Scan(&reais2)
-		dol2 := reais2 / 5.24
+		dol2 := reais2 / valdol
 		fmt.Println("O valor ", reais2, "em reais vale", dol2)
 	}
 }
+
